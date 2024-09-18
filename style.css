@@ -1,0 +1,225 @@
+/* Base Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #333; /* Dark gray for text */
+    margin: 0;
+    line-height: 1.6;
+}
+
+.welcomepage {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    background-color: #28a745;; /* Soft blue for the welcome page */
+    color: #fff; /* White text for contrast */
+    display: block;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcomepage h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff; /* White text */
+}
+
+.welcomepage h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #e0e0e0; /* Light gray for the subtitle */
+}
+
+.welcomepage button {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: #888 3px 3px 10px;
+    background-color: #fff;   
+    color: #4a90e2; /* Soft blue text */
+}
+
+.welcomepage button:hover {
+    transition: 0.5s;
+    box-shadow: inset #888 3px 3px 10px;
+    background-color: #333; /* Dark background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Resume Section */
+.resume {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark gray text */
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #4a90e2; /* Soft blue for main heading */
+}
+
+/* Personal Info Section */
+.personalinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.info-sec {
+    max-width: 60%;
+}
+
+.info-sec p {
+    margin: 5px 0;
+    color: #666; /* Medium gray for personal info text */
+}
+
+.profileimage img {
+    border: 2px solid #FFC0CB;;
+    height: 200px; /* Square shape */
+    object-fit: cover; /* Ensures the image fits within the square */
+    max-width: 200px;
+    height: auto;
+}
+
+/* Section Titles */
+section h1, section h2 {
+    background-color: #4a90e2; /* Soft blue background for sections */
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+    color: #fff; /* White text */
+}
+
+/* List Items */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+    color: #555; /* Dark gray for paragraphs */
+}
+
+.objective, .education, .skills, .work-experience {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Media Queries */
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+    .resume {
+        width: 90%;
+    }
+
+    .personalinfo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-sec {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profileimage img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    section h1, section h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    .resume {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .personalinfo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-sec {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profileimage img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    section h1, section h2 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    ul li {
+        padding: 3px 0;
+    }
+
+    button {
+        width: 120px;
+        padding: 8px;
+    }
+}
